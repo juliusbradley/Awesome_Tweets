@@ -1,0 +1,49 @@
+<style>
+
+img {
+  height: 10%;
+  width: 10%;
+}
+
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+#logobird {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.topnav {
+    background-color: darkblue;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 34px 36px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
