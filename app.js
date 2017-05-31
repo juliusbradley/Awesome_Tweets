@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const path         = require('path');
 
 const home = require('./routes/home');
-const dashboard = require('./routes/dashboard');
+const posts = require('./routes/posts');
 
 const app = Express();
 
@@ -19,8 +19,7 @@ app.use(cookieParser())
 app.use(Express.static(path.join(__dirname, 'public')));
 
 app.use('/', home);
-app.use ('/dashboard', dashboard);
-
+app.use('/posts' , posts);
 
 app.listen(PORT, function() {
   console.log(`Server listening on http://localhost:${PORT}`)

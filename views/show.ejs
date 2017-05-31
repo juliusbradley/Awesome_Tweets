@@ -1,0 +1,11 @@
+<h1> hello </h1>
+<form method = "post">
+<label>information</label>
+<textarea name="myTextBox" cols="75" rows="10">
+</textarea>
+<input id = "submit" name = "submit" type ="submit"/>
+</form>
+<% if (params){ %>
+<h3> <%= params.myTextBox %> </h3>
+<h1>  <%=params.username  %> <h1>
+<% } %>
